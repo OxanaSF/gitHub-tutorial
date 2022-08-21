@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import GitHubIntro from '../../components/GitHubIntro/GitHubIntro.js';
-import ChapterOne from '../../components/ChapterOne/ChapterOne.js';
+import AccountSetup from '../../components/AccountSetup/AccountSetup'
 import ChapterTwo from '../../components/ChapterTwo/ChapterTwo.js';
 import ChapterThree from '../../components/ChapterThree/ChapterThree.js';
 import ChapterFour from '../../components/ChapterFour/ChapterFour.js';
@@ -44,9 +44,9 @@ const GitHubMain = () => {
 
               <Link
                 to=""
-                onClick={() => setChapter('chapter-one')}
+                onClick={() => setChapter('account-setup')}
                 className={`nav-link ${
-                  chapter === 'chapter-one' ? 'active' : null
+                  chapter === 'account-setup' ? 'active' : null
                 }`}
               >
                 <i className="fa-solid fa-circle-dot nav-link-icon"></i>
@@ -92,7 +92,7 @@ const GitHubMain = () => {
 
 
       {chapter === 'github-intro' && <GitHubIntro />}
-      {chapter === 'chapter-one' && <ChapterOne />}
+      {chapter === 'account-setup' && <AccountSetup />}
       {chapter === 'chapter-two' && <ChapterTwo />}
       {chapter === 'chapter-three' && <ChapterThree />}
       {chapter === 'chapter-four' && <ChapterFour />}
