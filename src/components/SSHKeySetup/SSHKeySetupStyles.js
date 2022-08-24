@@ -17,4 +17,17 @@ export const SSHKeySetupStyled = styled.section`
   code {
     background-color: var(--primary-light-pink);
   }
+
+  img {
+    width: auto;
+  }
+  @media screen and (max-width: 800px) {
+    img {
+      width: 100vw;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
+  }
 `;
