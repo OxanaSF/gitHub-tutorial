@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const SSHKeySetupStyled = styled.section`
+  /* style for whole page first */
+  margin-left: calc(var(--nav-width) + 1rem);
+  @media screen and (max-width: 768px) {
+    margin-left: 1rem;
+  }
+
   h1 {
     text-align: center;
     font-size: 3rem;
@@ -8,9 +14,7 @@ export const SSHKeySetupStyled = styled.section`
     margin-top: 10rem;
   }
 
-  p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  code {
+    background-color: var(--primary-light-pink);
   }
 `;
